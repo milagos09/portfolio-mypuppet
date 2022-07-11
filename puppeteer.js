@@ -5,7 +5,7 @@ module.exports = async function (url, headless = true, iterations, socket) {
     if (!url) return;
 
     let tableData;
-    const browser = await puppeteer.launch({ headless: headless });
+    const browser = await puppeteer.launch({ headless: headless, ignoreDefaultArgs: ["--disable-extensions"] });
     const page = await browser.newPage();
     await page["goto"](url);
 
