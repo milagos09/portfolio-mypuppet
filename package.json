@@ -1,0 +1,23 @@
+{
+    "name": "my-puppet",
+    "version": "1.0.0",
+    "description": "web based GUI puppeteer",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon server"
+    },
+    "keywords": [
+        "puppeteer",
+        "automation",
+        "scrapper"
+    ],
+    "author": "Manuel Ike Lagos",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.18.1",
+        "puppeteer": "^15.3.2",
+        "socket.io": "^4.5.1"
+    }
+}

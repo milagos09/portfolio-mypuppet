@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+        <script src="./script.js" async></script>
+        <style>
+            input[type="text"] {
+                width: 350px;
+                padding: 3px;
+                margin: 2px 4px;
+            }
+        </style>
+        <title>My Puppet</title>
+    </head>
+    <body>
+        <label>URL: <input type="text" id="url" value="https://youtube.com" /></label>
+        <br />
+        <br />
+        <label>Headless: <input id="headless" type="checkbox" /></label>
+        <ol></ol>
+        <button onclick="addIteration()">+</button>
+        <br />
+        <br />
+        <label>CSV: <input id="csv" type="radio" name="format" value="csv" checked /></label>
+        <br />
+        <label>Text: <input id="text" type="radio" name="format" value="txt" /></label>
+        <br />
+        <br />
+        <button onclick="saveIterations()">Save</button>
+        <button onclick="reset()">Reset</button>
+        <button onclick="start()">Run</button>
+        <div id="logs"></div>
+    </body>
+</html>
